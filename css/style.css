@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: linear-gradient(-40deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+a {
+    color: #fff;
+    font-weight: 700;
+}
+
+main{
+    margin: 50px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+main ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+main ul li{
+    background: rgba(204, 204, 204, 0.349);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+div.rubrica{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+}
+form.add-new button{
+    display: block;
+    margin-top: 20px;
+}
