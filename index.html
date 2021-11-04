@@ -11,25 +11,25 @@
 <body>
     <main>
         <h1>Widget contatti in JavaScript</h1>
-        <form>
-            <label for="filter">Cerca tra i contatti: </label>
-            <input type="text" name="filter" placeholder="es: Pippo" required>
-            <button>Cerca</button>
-        </form>
         <div class="rubrica">
             <div>
+                <form>
+                    <label for="filter">Cerca tra i contatti: </label>
+                    <input type="text" name="filter" placeholder="es: Pippo" required>
+                    <button>Cerca</button>
+                </form>
                 <ul>            
                 </ul>
             </div>
             <div>
-                <h3>Aggiungi Contatto</h3>
                 <form class="add-new">
+                    <h3>Aggiungi Contatto</h3>
                     <label for="name">Nome e Cognome</label>
-                    <input type="text" name="name" id="name" placeholder="Nome e Cognome">
+                    <input type="text" name="name" id="name" placeholder="Nome e Cognome" required>
                     <label for="phone">Telefono</label>
-                    <input type="number" name="phone" id="phone" placeholder="Telefono">
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono" required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                     <button>Aggiungi ai contatti</button>
                 </form>
             </div>
