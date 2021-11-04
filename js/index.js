@@ -19,15 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const newName = q('#name');
     const newPhone = q('#phone');
     const newEmail = q('#email');
-
+    /**
+     * funzione che aggiunge un contatto in rubrica
+     */
     formAdd.addEventListener('submit', (event) => {
             event.preventDefault();
-            const exObj = {
-                name: "Leanne Graham",
-                email: "Sincere@april.biz",
-                phone: "+39 14531684"
-            }
-            const results = Object.create(exObj);
+            
+            const results = Object.create(data[0]);
             results.name = newName.value;
             results.email = newEmail.value;
             results.phone = newPhone.value;
