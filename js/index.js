@@ -18,9 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const formAdd = q('.add-new');
     const input = q('form input');
     const list = q('ul');
-    const newName = q('#name');
-    const newPhone = q('#phone');
-    const newEmail = q('#email');
     
     /**
      * funzione che aggiunge un contatto in rubrica
@@ -28,12 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     formAdd.addEventListener('submit', (event) => {
             event.preventDefault();
             
-            const results = Object.create(data[0]);
-            results.name = newName.value;
-            results.email = newEmail.value;
-            results.phone = newPhone.value;
+            const newContact = {
+                name: event.target.name.value,
+                phone: event.target.phone.value,
+                email: event.target.email.value
+            };
 
-            data.push(results);
+            data.push(newContact);
 
             render(list, data);
     });
